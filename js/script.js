@@ -36,14 +36,14 @@ do {
     }
   }
   function papel(valor) {
-    let piedra = 2;
+    let tijera = 1;
     let random = Math.floor(Math.random() * 3) + 1;
     if (random === valor) {
       alert(`Tu elegiste Papel y yo elegí Papel ||| Empatamos! :/`);
-    } else if (random === piedra) {
-      alert(`Tu elegiste Papel y yo elegí Piedra ||| Me Ganaste! )=`);
+    } else if (random === tijera) {
+      alert(`Tu elegiste Papel y yo elegí Tijera ||| Me Ganaste! )=`);
     } else {
-      alert(`Tu elegiste Papel y yo elegí Tijera ||| Te Gané! =D`);
+      alert(`Tu elegiste Tijera y yo elegí Piedra ||| Te Gané! =D`);
     }
   }
 } while (confirm("Quieres jugar de nuevo?"));
